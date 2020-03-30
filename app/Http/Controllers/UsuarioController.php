@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Usuario;
 
-class LoginController extends Controller
+class UsuarioController extends Controller
 {
     //Função para página inicial
     public function inicial(){

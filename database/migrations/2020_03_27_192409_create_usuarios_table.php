@@ -27,6 +27,7 @@ class CreateUsuariosTable extends Migration
             $table->text("complemento");
             $table->text("datanasc");
             $table->text("sexo");
+            $table->text("senha");
         });
     }
 
