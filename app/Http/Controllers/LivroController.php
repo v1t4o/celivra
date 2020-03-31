@@ -11,6 +11,7 @@ use App\Livro;
 
 class LivroController extends Controller
 {
+    
     //Função para listagem de livros cadastrados
     public function listlivro(){
         $livros = Livro::all();
