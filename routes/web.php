@@ -1,6 +1,7 @@
 <?php
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Route;
+
 
 //Rotas de Login
 Route::get('/', 'UsuarioController@inicial');
@@ -19,7 +20,5 @@ Route::get('/dashboard','UsuarioController@menu');
 Route::get('/livro/listar', 'LivroController@listlivro');
 Route::post('/livro/salvar', 'LivroController@salvalivro');
 Route::get('/livro/cadastrar','LivroController@cadlivro');
-Route::get('/{livro}', 'LivroController@listar');
 
 ?>
-

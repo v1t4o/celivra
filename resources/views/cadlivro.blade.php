@@ -9,51 +9,54 @@
     </head>
     <body>
         <h1>Cadastro de Livros</h1>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
-                <div class="form-group col-md-6">
-                <label for="inputPassword4">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-                </div>
+        <form method="post" action="/livro/salvar">
+            <div class="form-group">
+                <label for="inputText">Título</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Título do Livro">
             </div>
             <div class="form-group">
-                <label for="inputAddress">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                <label for="inputText">Autor</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Autor do Livro">
             </div>
             <div class="form-group">
-                <label for="inputAddress2">Endereço 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+                <label for="inputText">Ano de Publicação</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Ano de publicação do Livro">
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                <label for="inputCity">Cidade</label>
-                <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                <label for="inputEstado">Estado</label>
-                <select id="inputEstado" class="form-control">
+            <div class="form-group">
+                <label for="inputText">Edição</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Edição do Livro">
+            </div>
+            <div class="form-group">
+                <label for="inputText">Editora</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Editora do Livro">
+            </div>
+            <div class="form-group">
+                <label for="inputText">ISBN</label>
+                <input type="text" class="form-control" id="inputText" placeholder="ISBN do Livro">
+            </div>
+            <div class="form-group">
+                <label for="inputText">Quantidade de páginas</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Quantidade de páginas do Livro">
+            </div>
+            <div class="form-group">
+                <label for="inputText">Quantidade de Item</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Quantidade a ser cadastrada">
+            </div>
+            <div class="form-group">
+                <label for="inputText">Disponibilidade</label>
+                <select id="inputDisponibilidade" class="form-control">
                     <option selected>Escolher...</option>
-                    <option>...</option>
-                </select>
-                </div>
-                <div class="form-group col-md-2">
-                <label for="inputCEP">CEP</label>
-                <input type="text" class="form-control" id="inputCEP">
-                </div>
+                    <option>Troca</option>
+                    <option>Doação</option>
+                    <option>Troca/Doação</option>
+                    <option>Nenhuma</option>
+                </select>            
             </div>
             <div class="form-group">
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Clique em mim
-                </label>
-                </div>
+                <label for="inputText">Descrição do Livro</label>
+                <input type="text" class="form-control" id="inputText" placeholder="Descrição do Livro">
             </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
