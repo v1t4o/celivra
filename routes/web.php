@@ -12,7 +12,6 @@ Route::get('/login/cadastrar','UsuarioController@caduser');
 //Rotas de saída de sistema
 Route::get('/sair', 'UsuarioController@sair');
 
-
 //Rotas de dashboard
 Route::get('/dashboard','UsuarioController@menu');
 

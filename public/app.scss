@@ -6,7 +6,7 @@ div#cab{
     max-width: 100%;
     border-width: 5px;
     border-style: solid;
-    border-color: #002d6e;
+    border-color: #3f8cff;
     border-radius: 10px;
     margin: 0 auto;
     top: 1%;
@@ -14,14 +14,14 @@ div#cab{
     position: static;
     width:99%;
     height:200px;
-    background: #002d6e;
+    background: #3f8cff;
     
 }
 div#corpo{
     max-width: 100%;
     border-width: 4px;
     border-style: solid;
-    border-color: #002d6e;
+    border-color: #3f8cff;
     border-radius: 10px;
     margin-top:0.5%;
     margin-left: 0.5%; 
@@ -35,7 +35,7 @@ div#cplog{
     max-width: 100%;
     border-width: 4px;
     border-style: solid;
-    border-color: #002d6e;
+    border-color: #3f8cff;
     border-radius: 10px;
     //margin: 0 auto;
     margin-top:0.5%;
@@ -80,28 +80,28 @@ h1#titulo{
 }
 img#logo{
     float: left;
-    width: 150px;
+    width: 200px;
     height: 150px;
-    margin-top: 2%;
-    left: 3%;
+    margin-top: 1%;
+    left: 2%;
     position: relative;
 }
 button#cadastro{
-    background-color: #002d6e;
+    background-color: #3f8cff;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom:1%;
 }
 
 button#cadlog{
-    background-color: #002d6e;
+    background-color: #3f8cff;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 4%;
 }
 
 a#CadItem:link, a#CadItem:visited {
-    background-color: #002d6e;
+    background-color: #3f8cff;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -130,7 +130,7 @@ a#CadItem:hover, a#CadItem:active {
 }
 
 a#BtnSair:link, a#BtnSair:visited {
-    background-color: #002d6e;
+    background-color: #3f8cff;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -173,14 +173,14 @@ div#btncad{
     font-weight: bold;
     border-width: 5px;
     border-style: solid;
-    border-color: #002d6e;
+    border-color: #3f8cff;
     text-align: center;
 }
 
 .item{
     border-width: 5px;
     border-style: solid;
-    border-color: #002d6e;
+    border-color: #3f8cff;
     text-align: center;
 
 }
@@ -191,7 +191,7 @@ div#btncad{
 }
 
 a#BtnSairCad:link, a#BtnSairCad:visited {
-    background-color: #002d6e;
+    background-color: #3f8cff;
     color: #fff;
     padding: 6px 25px;
     text-align: center;

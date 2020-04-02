@@ -8,77 +8,70 @@
         
     </head>
     <body>
-        <h1>Cadastro de Usuários</h1>
-        <form>
+        <h1>Cadastro de Usuário</h1>
+        <form method="POST" action="/login/salvar">
+            @csrf
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <input type="text" name="email" class="form-control" id="inputEmail4" placeholder="Email">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputText">Nome de usuário</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="Nome de usuário">
+                    <input type="text" name="nomeusuario" class="form-control" id="inputText" placeholder="Nome de usuário">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                    <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputText">Nome</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="Nome">
+                    <input type="text" name="nome" class="form-control" id="inputText" placeholder="Nome">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputText">Sobrenome</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="Sobrenome">
+                    <input type="text" name="sobrenome" class="form-control" id="inputText" placeholder="Sobrenome">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputAddress">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                <input type="text" name="endereco" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputText">Cidade</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="Nome">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputText">Sobrenome</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="Sobrenome">
+                    <label for="inputText">Bairro</label>
+                    <input type="text" name="bairro" class="form-control" id="inputText" placeholder="Nome">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">Cidade</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" name="cidade" class="form-control" id="inputCity" placeholder="Cidade">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputEstado">Estado</label>
-                    <select id="inputEstado" class="form-control">
+                    <select name="estado" id="inputEstado" class="form-control">
                         <option selected>Escolher...</option>
                         <option>...</option>
                     </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputCEP">CEP</label>
-                    <input type="text" class="form-control" id="inputCEP">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputText">Complemento</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="Complemento">
+                    <input type="text" name="complemento" class="form-control" id="inputText" placeholder="Complemento">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputText">Data de Nascimento</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="Data de Nascimento">
+                    <input type="text" name="datanasc" class="form-control" id="inputText" placeholder="Data de Nascimento">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputSexo">Sexo</label>
-                    <select id="inputSexo" class="form-control">
+                    <select name="sexo" id="inputSexo" class="form-control">
                         <option selected>Escolher...</option>
                         <option>Feminino</option>
                         <option>Masculino</option>

@@ -15,7 +15,6 @@ class UsuarioController extends Controller
     // //Função para verificação de Login
     //v.1
     public function login(Request $dados){
-        $objuser = new Usuario;
         $user = $dados->get("usuario");
         $pass = $dados->get("senha");
         if( $user == "admin" && $pass == 123456){
@@ -49,9 +48,18 @@ class UsuarioController extends Controller
     //Função para salvamento de cadastro de livro no banco de dados
     public function svuser(Request $caduser){
         $objuser = new Usuario;
-        $objuser->usuario = $caduser->usuario;
-        $objuser->senha = $caduser->senha;
         $objuser->email = $caduser->email;
+        $objuser->nomeusuario = $caduser->nomeusuario;
+        $objuser->nome = $caduser->nome;
+        $objuser->sobrenome = $caduser->sobrenome;
+        $objuser->endereco = $caduser->endereco;
+        $objuser->bairro = $caduser->bairro;
+        $objuser->cidade = $caduser->cidade;
+        $objuser->estado = $caduser->estado;
+        $objuser->complemento = $caduser->complemento;
+        $objuser->datanasc = $caduser->datanasc;
+        $objuser->sexo = $caduser->sexo;
+        $objuser->senha = $caduser->senha;
         $objuser->save();
         return redirect("/");
     }
