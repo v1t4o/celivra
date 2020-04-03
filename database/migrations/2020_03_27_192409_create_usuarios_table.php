@@ -18,6 +18,7 @@ class CreateUsuariosTable extends Migration
             $table->timestamps();
             $table->text("email");
             $table->text("nomeusuario");
+            $table->text("senha");
             $table->text("nome");
             $table->text("sobrenome");
             $table->text("endereco");
@@ -27,7 +28,6 @@ class CreateUsuariosTable extends Migration
             $table->text("complemento");
             $table->text("datanasc");
             $table->text("sexo");
-            $table->text("senha");
         });
     }
 

@@ -1,6 +1,6 @@
 //
 body{
-    height: 100%;
+    height: 600px;
 }
 div#cab{
     max-width: 100%;
@@ -19,10 +19,6 @@ div#cab{
 }
 div#corpo{
     max-width: 100%;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #3f8cff;
-    border-radius: 10px;
     margin-top:0.5%;
     margin-left: 0.5%; 
     position: relative;
@@ -33,16 +29,12 @@ div#corpo{
 
 div#cplog{
     max-width: 100%;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #3f8cff;
-    border-radius: 10px;
     //margin: 0 auto;
     margin-top:0.5%;
     margin-left: 69.5%; 
     position: relative;
     width:30%;
-    height:100%;
+    height:600px;
     
 }
 
@@ -60,14 +52,33 @@ div#principal{
     
 }
 
-form#interno{
+form#log{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #3f8cff;
+    border-radius: 10px;
+    padding: 3px;
     left:5%;
     margin-top: 1%;
     position:relative;
     width:90%; /* Valor da Largura */
+    height:45%; /* Valor da Altura */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form#cadastro{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #3f8cff;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 1%;
+    position:relative;
+    width:100%; /* Valor da Largura */
     height:100%; /* Valor da Altura */
     font-family: Arial, Helvetica, sans-serif;
 }
+
 h1#titulo{
     color: #ffffff;
     text-align: left;
@@ -80,9 +91,9 @@ h1#titulo{
 }
 img#logo{
     float: left;
-    width: 200px;
-    height: 150px;
-    margin-top: 1%;
+    width: 250px;
+    height: 170px;
+    margin-top: 0%;
     left: 2%;
     position: relative;
 }
@@ -225,4 +236,21 @@ a#BtnSairCad:hover, a#BtnSairCad:active {
     text-decoration: none;
     display: inline-block;
 
+}
+
+footer#rdp{
+    text-align:center;
+    max-width: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3f8cff;
+    border-radius: 6px;
+    color: #ffffff;
+    margin: 0 auto;
+    top: 1%;
+    margin-top:10px; 
+    position: static;
+    width:99%;
+    height:30px;
+    background: #3f8cff;    
 }
