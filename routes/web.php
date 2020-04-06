@@ -13,10 +13,10 @@ Route::get('/login/cadastrar','UsuarioController@caduser');
 Route::get('/sair', 'UsuarioController@sair');
 
 //Rotas de dashboard
-Route::get('/dashboard','UsuarioController@menu');
+Route::get('/dashboard','LivroController@listlivro');
 
 //Rotas de Livros
-Route::get('/livro/listar', 'LivroController@listlivro');
+//Route::get('/livro/listar', 'LivroController@listlivro');
 Route::post('/livro/salvar', 'LivroController@salvalivro');
 Route::get('/livro/cadastrar','LivroController@cadlivro');
 

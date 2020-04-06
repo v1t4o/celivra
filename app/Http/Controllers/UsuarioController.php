@@ -4,21 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Usuario;
+use App\Livro;
 
 class UsuarioController extends Controller
 {
-    //Função para página inicial
     public function inicial(){
         return view ('login');
     }
-    
+
     // //Função para verificação de Login
     //v.1
     public function login(Request $dados){
         $user = $dados->get("usuario");
         $pass = $dados->get("senha");
         if( $user == "admin" && $pass == 123456){
-            return view ('dashboard');
+            return redirect ('/dashboard');
         }
         else{
             return view ('login');
@@ -41,10 +41,6 @@ class UsuarioController extends Controller
         return redirect("/");
     }
 
-    public function menu(){
-        return view ('dashboard');
-    }
-
     //Função para salvamento de cadastro de livro no banco de dados
     public function svuser(Request $caduser){
         $objuser = new Usuario;
@@ -64,3 +60,4 @@ class UsuarioController extends Controller
         return redirect("/");
     }
 }
+

@@ -2,7 +2,7 @@
 //Autor: Victor de Oliveira
 //Criação do projeto: 09/03/2020
 //Autor da última atualização: Victor
-//Data última atualização: 11/03/2020
+//Data última atualização: 06/04/2020
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -15,7 +15,7 @@ class LivroController extends Controller
     //Função para listagem de livros cadastrados
     public function listlivro(){
         $livros = Livro::all();
-        return view ('listlivro',compact('livros'));
+        return view ('dashboard',compact('livros'));
     }
 
     //Função para redirecionamento para tela de cadastro.
@@ -26,11 +26,19 @@ class LivroController extends Controller
     //Função para salvamento de cadastro de livro no banco de dados
     public function salvalivro(Request $cadlivro){
         $objlivro = new Livro;
+        $objlivro->idusuario = "0";
         $objlivro->titulo = $cadlivro->titulo;
         $objlivro->autor = $cadlivro->autor;
+        $objlivro->ano = $cadlivro->ano;
+        $objlivro->edicao = $cadlivro->edicao;
+        $objlivro->editora = $cadlivro->editora;
         $objlivro->isbn = $cadlivro->isbn;
-        $objlivro->procedencia = $cadlivro->procedencia;
+        $objlivro->numpaginas = $cadlivro->numpaginas;
+        $objlivro->quantidade = $cadlivro->quantidade;
+        $objlivro->disponibilidade = $cadlivro->disponibilidade;
+        $objlivro->descritem = $cadlivro->descritem;
+        $objlivro->fotoitem = "";
         $objlivro->save();
-        return redirect("/livro/listar");
+        return redirect("/dashboard");
     }
 }

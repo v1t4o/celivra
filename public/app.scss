@@ -52,6 +52,18 @@ div#principal{
     
 }
 
+div#consulta{
+    max-width: 100%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #3f8cff;
+    border-radius: 10px;
+    margin-top:0.5%;
+    position: relative;
+    width:99%;
+    height:600px;
+}
+
 form#log{
     border-width: 4px;
     border-style: solid;
