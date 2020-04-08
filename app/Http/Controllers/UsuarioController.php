@@ -24,13 +24,6 @@ class UsuarioController extends Controller
             return view ('login');
         }
     }
-    
-    //v.2
-    ////Função para listagem de pessoas cadastradas
-    /*public function listpessoa(){
-        $pessoa = Pessoa::all();
-        return view ('listpessoa',compact('pessoas'));
-    }*/
 
     //Função para redirecionamento para tela de cadastro.
     public function caduser(){

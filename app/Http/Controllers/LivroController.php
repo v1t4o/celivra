@@ -1,8 +1,5 @@
 <?php
-//Autor: Victor de Oliveira
-//Criação do projeto: 09/03/2020
-//Autor da última atualização: Victor
-//Data última atualização: 06/04/2020
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
