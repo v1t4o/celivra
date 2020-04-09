@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 /*Linha de comando para utilizar a conexão já criada pelo framework de acesso ao BD*/
@@ -16,8 +17,23 @@ class LivroController extends Controller
     }
 
     //Função para redirecionamento para tela de cadastro.
-    public function cadlivro(){
+    public function redviewcadlivro(){
         return view ('cadlivro');
+    }
+
+    public function redvieweditlivro($livro){
+        $resultado = DB::table('livros')->where('titulo', $livro)->first();
+        return view ('atualivro', compact('resultado'));
+    }
+        
+    public function atualizalivro($livro, Request $item){
+        $autenticacao = DB::table('livros')->where('titulo', $livro)->update(['titulo' => $item->titulo, 'autor' => $item->autor, 'ano' => $item->ano, 'edicao' => $item->edicao, 'editora' => $item->editora, 'isbn' => $item->isbn, 'numpaginas' => $item->numpaginas, 'quantidade' => $item->quantidade, 'disponibilidade' => $item->disponibilidade, 'descritem' => $item->descritem,]);
+        return redirect("/dashboard");
+    }
+    
+    public function excluilivro($livro){
+        DB::table('livros')->where('titulo', $livro)->delete();
+        return redirect("/dashboard");
     }
 
     //Função para salvamento de cadastro de livro no banco de dados

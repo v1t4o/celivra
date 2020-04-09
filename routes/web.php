@@ -18,6 +18,9 @@ Route::get('/dashboard','LivroController@listlivro');
 //Rotas de Livros
 //Route::get('/livro/listar', 'LivroController@listlivro');
 Route::post('/livro/salvar', 'LivroController@salvalivro');
-Route::get('/livro/cadastrar','LivroController@cadlivro');
+Route::post('/livro/atualizar/{livro}', 'LivroController@atualizalivro');
+Route::get('/livro/editar/{livro}','LivroController@redvieweditlivro');
+Route::get('/livro/cadastrar','LivroController@redviewcadlivro');
+Route::get('/livro/excluir/{livro}','LivroController@excluilivro');
 
 ?>

@@ -57,6 +57,8 @@
                             <td class="cabecalho">Quantidade de Item</td>
                             <td class="cabecalho">Disponibilidade</td>
                             <td class="cabecalho">Descrição do Item</td>
+                            <td class="cabecalho">Editar</td>
+                            <td class="cabecalho">Excluir</td>
                         </tr>
                         @foreach($livros as $livro)
                         <tr class="linha">
@@ -70,6 +72,12 @@
                             <td class="item">{{ $livro->quantidade }}</td>
                             <td class="item">{{ $livro->disponibilidade }}</td>
                             <td class="item">{{ $livro->descritem }}</td>
+                            <td class="item">
+                                <a href="/livro/editar/<?php echo $livro->titulo?>">Editar</a>
+                            </td>
+                            <td class="item">
+                                <a href="/livro/excluir/<?php echo $livro->titulo?>">Excluir</a>
+                            </td>
                         </tr>
                         @endforeach
                     </table>

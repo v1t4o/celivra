@@ -11,19 +11,6 @@ class UsuarioController extends Controller
         return view ('login');
     }
 
-    /*// //Função para verificação de Login
-    //v.1
-    public function login(Request $dados){
-        $user = $dados->get("usuario");
-        $pass = $dados->get("senha");
-        if( $user == "admin" && $pass == 123456){
-            return redirect ('/dashboard');
-        }
-        else{
-            return view ('login');
-        }
-    }*/
-
     //Função para verificação de Login 2.0
     public function login(Request $dados){
         $usuario = $dados->get("usuario");
@@ -40,10 +27,6 @@ class UsuarioController extends Controller
     //Função para redirecionamento para tela de cadastro.
     public function caduser(){
         return view ('caduser');
-    }
-
-    public function sair(){
-        return redirect("/");
     }
 
     //Função para salvamento de cadastro de livro no banco de dados
@@ -64,5 +47,11 @@ class UsuarioController extends Controller
         $objuser->save();
         return redirect("/");
     }
+
+    public function sair(){
+        return redirect("/");
+    }
+
+    
 }
 
